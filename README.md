@@ -11,4 +11,20 @@ Diane Salgado Ortega - Encargada del incio y los contactos de la tienda.
 
 Diego Jimenez Gonzalez - Encargado de el apartado de ayuda para los usuarios.
 
+![Image](https://github.com/user-attachments/assets/a9514be4-5a6f-4273-a2a2-913aeca77f33)
+
+
+
+![Image](https://github.com/user-attachments/assets/a9514be4-5a6f-4273-a2a2-913aeca77f33)
+
+
+
+
+![Image](https://github.com/user-attachments/assets/08d92f68-67f7-46e7-aaf9-d5264a6bd223)
+
+
+
+
+
+![Image](https://github.com/user-attachments/assets/57131614-d999-474d-8040-4f05c323abae)
 
