@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tienda en Línea - Glow up</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f9f9f9;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    header nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: black;
+    }
+
+    .user-tag {
+      background-color: #00e3e3;
+      padding: 4px 10px;
+      border-radius: 5px;
+      color: white;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .buscador {
+      display: flex;
+      justify-content: center;
+      margin: 10px 0 20px;
+    }
+
+    .buscador input {
+      width: 300px;
+      padding: 8px;
+      font-size: 16px;
+    }
+
+    .contenedor {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0 30px 30px;
+    }
+
+    .filtros {
+      flex: 1;
+      min-width: 200px;
+      max-width: 250px;
+      margin-right: 30px;
+    }
+
+    .filtros section {
+      margin-bottom: 20px;
+    }
+
+    .productos {
+      flex: 3;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 20px;
+    }
+
+    .producto {
+      background-color: #fff;
+      border: 2px solid #eee;
+      border-radius: 10px;
+      padding: 10px;
+      text-align: center;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 300px;
+    }
+
+    .producto img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .producto .precio {
+      color: red;
+      font-weight: bold;
+      margin: 5px 0;
+    }
+
+    .producto .estrellas {
+      color: orange;
+      font-size: 14px;
+    }
+
+    .producto .like {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 18px;
+      color: black;
+    }
+
+    .producto h4 {
+      margin-top: auto;
+      margin-bottom: 5px;
+    }
+
+    .color-circle {
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      margin-right: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .tallas span {
+      border: 1px solid #ccc;
+      padding: 5px 8px;
+      margin-right: 5px;
+      border-radius: 5px;
+      background-color: #fff;
+      cursor: pointer;
+    }
+
+    .tallas span:hover {
+      background-color: #eee;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div><strong>Logo</strong></div>
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#">Tienda</a>
+      <a href="#">Contacto</a>
+      <a href="#">Ayuda</a>
+    </nav>
+    <div class="user-tag">haejeinpon518</div>
+  </header>
+
+  <h1>Niño</h1>
+
+  <div class="buscador">
+    <input type="text" placeholder="Buscador">
+  </div>
+
+  <div class="contenedor">
+    <div class="filtros">
+      <section>
+        <h3>Precio</h3>
+        <label><input type="radio" name="precio"> Under 50</label><br>
+        <label><input type="radio" name="precio"> 50 to 100</label><br>
+        <label><input type="radio" name="precio" checked> 100 to 150</label><br>
+        <label><input type="radio" name="precio"> 150 to 200</label><br>
+        <label><input type="radio" name="precio"> 250 to 300</label><br>
+        <label><input type="radio" name="precio"> Over 300</label>
+      </section>
+
+      <section>
+        <h3>Color</h3>
+        <div>
+          <span class="color-circle" style="background-color: green;"></span>
+          <span class="color-circle" style="background-color: blue;"></span>
+          <span class="color-circle" style="background-color: red;"></span>
+          <span class="color-circle" style="background-color: yellow;"></span>
+          <span class="color-circle" style="background-color: orange;"></span>
+          <span class="color-circle" style="background-color: pink;"></span>
+          <span class="color-circle" style="background-color: black;"></span>
+          <span class="color-circle" style="background-color: white;"></span>
+          <span class="color-circle" style="background-color: gray;"></span>
+        </div>
+      </section>
+
+      <section>
+        <h3>Talla</h3>
+        <div class="tallas">
+          <span>S</span>
+          <span>M</span>
+          <span>L</span>
+          <span>XL</span>
+        </div>
+      </section>
+    </div>
+
+    <div class="productos">
+      <!-- Lista total con 22 productos -->
+      <div class="producto"><div class="like">♥</div><img src="https://i.etsystatic.com/11463421/r/il/4ddef8/3546997760/il_fullxfull.3546997760_7bmm.jpg"><div class="estrellas">★★★★☆</div><div class="precio">$149</div><h4>Chamarra</h4></div>
+      <div class="producto"><div class="like">♥</div><img src="https://goliquidator.com/wp-content/uploads/2023/09/McysChildren0124_00.jpg"><div class="estrellas">★★★★★</div><div class="precio">$149</div><h4>Vestido sin mangas</h4></div>
+      <div class="producto"><div class="like">♥</div><img src="https://i.pinimg.com/736x/2d/ef/05/2def059ee73a41e4eca4cf81515d3843.jpg"><div class="estrellas">★★★★★</div><div class="precio">$149</div><h4>Vestido lila sin mangas</h4></div>
+      <div class="producto"><div class="like">♥</div><img src="https://image.made-in-china.com/202f0j00hpJUSdrEhfkW/Summer-Kids-Clothes-Set-Costume-Children-s-Clothing-Full-Length-Casual-Toddler-Boys-Clothes-Set.webp"><div class="estrellas">★★★★☆</div><div class="precio">$149</div><h4>Vestido con ondas</h4></div>
+      <div class="producto"><div class="like">♥</div><img src="https://img.freepik.com/fotos-premium/ropa-nino-luz_392895-22860.jpg"><div class="estrellas">★★★☆☆</div><div class="precio">$149</div><h4>Nike Air Max 270</h4></div>
+      <div class="producto"><div class="like">♥</div><img src="https://img.ltwebstatic.com/images3_pi/2024/01/06/7f/17045381034437ee4bfe7e969e132944c5745ab9ad_thumbnail_720x.webp"><div class="estrellas">★★★★☆</div><div class="precio">$149</div><h4>Pantalón de vestir</h4></div>
+      <div class="producto"><div class="like">♥</div><img src="https://m.media-amazon.com/images/I/51IzXTbHSCL._AC_SY580_.jpg"><div class="estrellas">★★★★★</div><div class="precio">$149</div><h4>Pantalón mezclilla</h4></div>
+      <div class="producto"><div class="like">♥</div><img src="https://www.ostu.com/on/demandware.static/-/Sites-storefront_catalog_ostu/default/dwd0ae6a5d/images/filters/carrusel-infantil-nino-chaquetas-y-chalecos.jpg"><div class="estrellas">★★★★☆</div><div class="precio">$149</div><h4>Falda marrón</h4></div>
+      <div class="producto"><div class="like">♥</div><img src="https://i.pinimg.com/736x/69/a8/92/69a892bf78d04367440e59e1a7a9b6d5.jpg"><div class="estrellas">★★★☆☆</div><div class="precio">$149</div><h4>Blusa elegante</h4></div>
+      <div class="producto"><div class="like">♥</div><img src="https://ae-pic-a1.aliexpress-media.com/kf/S0dc4712b23304cc1ae41fd93b95e54c0U.jpg"><div class="estrellas">★★★★★</div><div class="precio">$149</div><h4>Sudadera rosa</h4></div>
+      <div class="producto"><div class="like">♥</div><img src="https://img.freepik.com/foto-gratis/retrato-estudio-nino-aislado_23-2149198859.jpg"><div class="estrellas">★★★☆☆</div><div class="precio">$149</div><h4>Top deportivo</h4></div>
+      <div class="producto"><div class="like">♥</div><img src="https://img.remediosdigitales.com/bffde3/foto-portada3/450_1000.jpg"><div class="estrellas">★★★★☆</div><div class="precio">$149</div><h4>Chaqueta casual</h4></div>
+      
+      <!-- 4 nuevos productos -->
+      <div class="producto"><div class="like">♥</div><img src="https://i.pinimg.com/236x/7c/06/ca/7c06cab70f221e948b7543a2d8c0dc89.jpg"><div class="estrellas">★★★★☆</div><div class="precio">$149</div><h4>Blazer negro</h4></div>
+      <div class="producto"><div class="like">♥</div><img src="https://i.pinimg.com/564x/4a/e1/a3/4ae1a3a1275f4f8ddb2e089458d8c20b.jpg"><div class="estrellas">★★★★★</div><div class="precio">$149</div><h4>Vestido floreado</h4></div>
+      <div class="producto"><div class="like">♥</div><img src="https://i.pinimg.com/236x/54/56/28/5456280ab7d4525d9d9cd8ead65ca3ca.jpg"><div class="estrellas">★★★☆☆</div><div class="precio">$149</div><h4>Camisa de lino</h4></div>
+      <div class="producto"><div class="like">♥</div><img src="https://i.pinimg.com/474x/dd/33/c0/dd33c01d1442fdd24edefbd577d827fc.jpg"><div class="estrellas">★★★★☆</div><div class="precio">$149</div><h4>Top con encaje</h4></div>
+    </div>
+  </div>
+
+</body>
+</html>
