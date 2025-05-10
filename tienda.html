@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tienda en Línea - Glow up</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f9f9f9;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    header nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: black;
+    }
+
+    .user-tag {
+      background-color: #00e3e3;
+      padding: 4px 10px;
+      border-radius: 5px;
+      color: white;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .buscador {
+      display: flex;
+      justify-content: center;
+      margin: 10px 0 20px;
+    }
+
+    .buscador input {
+      width: 300px;
+      padding: 8px;
+      font-size: 16px;
+    }
+
+    .contenedor {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0 30px 30px;
+    }
+
+    .filtros {
+      flex: 1;
+      min-width: 200px;
+      max-width: 250px;
+      margin-right: 30px;
+    }
+
+    .filtros section {
+      margin-bottom: 20px;
+    }
+
+    .productos {
+      flex: 3;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 20px;
+    }
+
+    .producto {
+      background-color: #fff;
+      border: 2px solid #eee;
+      border-radius: 10px;
+      padding: 10px;
+      text-align: center;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 300px;
+    }
+
+    .producto img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .producto .precio {
+      color: red;
+      font-weight: bold;
+      margin: 5px 0;
+    }
+
+    .producto .estrellas {
+      color: orange;
+      font-size: 14px;
+    }
+
+    .producto .like {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 18px;
+      color: black;
+    }
+
+    .producto h4 {
+      margin-top: auto;
+      margin-bottom: 5px;
+    }
+
+    .color-circle {
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      margin-right: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .tallas span {
+      border: 1px solid #ccc;
+      padding: 5px 8px;
+      margin-right: 5px;
+      border-radius: 5px;
+      background-color: #fff;
+      cursor: pointer;
+    }
+
+    .tallas span:hover {
+      background-color: #eee;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div><strong>Logo</strong></div>
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#">Tienda</a>
+      <a href="#">Contacto</a>
+      <a href="#">Ayuda</a>
+    </nav>
+    <div class="user-tag">haejeinpon518</div>
+  </header>
+
+  <h1>Glow up</h1>
+
+  <div class="buscador">
+    <input type="text" placeholder="Buscador">
+  </div>
+
+  <div class="contenedor">
+    <div class="filtros">
+      <section>
+        <h3>Precio</h3>
+        <label><input type="radio" name="precio"> Under 50</label><br>
+        <label><input type="radio" name="precio"> 50 to 100</label><br>
+        <label><input type="radio" name="precio" checked> 100 to 150</label><br>
+        <label><input type="radio" name="precio"> 150 to 200</label><br>
+        <label><input type="radio" name="precio"> 250 to 300</label><br>
+        <label><input type="radio" name="precio"> Over 300</label>
+      </section>
+
+      <section>
+        <h3>Color</h3>
+        <div>
+          <span class="color-circle" style="background-color: green;"></span>
+          <span class="color-circle" style="background-color: blue;"></span>
+          <span class="color-circle" style="background-color: red;"></span>
+          <span class="color-circle" style="background-color: yellow;"></span>
+          <span class="color-circle" style="background-color: orange;"></span>
+          <span class="color-circle" style="background-color: pink;"></span>
+          <span class="color-circle" style="background-color: black;"></span>
+          <span class="color-circle" style="background-color: white;"></span>
+          <span class="color-circle" style="background-color: gray;"></span>
+        </div>
+      </section>
+
+      <section>
+        <h3>Talla</h3>
+        <div class="tallas">
+          <span>S</span>
+          <span>M</span>
+          <span>L</span>
+          <span>XL</span>
+        </div>
+      </section>
+    </div>
+
+    <div class="productos">
+      <!-- Lista total con 22 productos -->
+      <div class="producto"><div class="like">♥</div><img src="https://http2.mlstatic.com/D_NQ_NP_676747-MLM76497949707_052024-O-chamarra-de-piel-caballero-modelo-universitaria.webp"><div class="estrellas">★★★★☆</div><div class="precio">$149</div><h4>Chamarra</h4></div>
+      <div class="producto"><div class="like">♥</div><img src="https://jrwestern.com.mx/wp-content/uploads/2023/10/Chamarra-Ariat-10028257-Softshell-Jkt-1.png"><div class="estrellas">★★★★★</div><div class="precio">$149</div><h4>Vestido sin mangas</h4></div>
+      <div class="producto"><div class="like">♥</div><img src="https://kovparts.com/cdn/shop/products/chamarra1_2b511037-ff30-4cc2-ab62-a431a974e214.png?v=1708966673"><div class="estrellas">★★★★★</div><div class="precio">$149</div><h4>Vestido lila sin mangas</h4></div>
+      <div class="producto"><div class="like">♥</div><img src="https://http2.mlstatic.com/D_NQ_NP_658558-MLM71778720226_092023-O-chamarra-piel-borrego-perforada-hombre-color-negro-c-96.webp"><div class="estrellas">★★★★☆</div><div class="precio">$149</div><h4>Vestido con ondas</h4></div>
+      <div class="producto"><div class="like">♥</div><img src="https://yazbek.com.mx/cdn/shop/files/D0651-pantalon-mezclilla-dama-100algodon-indigo-oscuro_1.jpg?v=1734474218"><div class="estrellas">★★★☆☆</div><div class="precio">$149</div><h4>Nike Air Max 270</h4></div>
+      <div class="producto"><div class="like">♥</div><img src="https://passionpromocional.com/cdn/shop/products/Diapositiva2_a1c16a36-66f7-427d-9e34-5197115b0bc4_800x.jpg?v=1628979193"><div class="estrellas">★★★★☆</div><div class="precio">$149</div><h4>Pantalón de vestir</h4></div>
+      <div class="producto"><div class="like">♥</div><img src="https://www.flashy.com.co/cdn/shop/files/pantalon-wide-leg-tipo-sastre-fulvia-2_grande.jpg?v=1722522082"><div class="estrellas">★★★★★</div><div class="precio">$149</div><h4>Pantalón mezclilla</h4></div>
+      <div class="producto"><div class="like">♥</div><img src="https://surtidoradepartamental.vteximg.com.br/arquivos/ids/628179/010000153518_1.jpg?v=638598240438600000"><div class="estrellas">★★★★☆</div><div class="precio">$149</div><h4>Falda marrón</h4></div>
+      <div class="producto"><div class="like">♥</div><img src="https://i5.walmartimages.com/asr/90152b11-2c1e-4497-9a7d-c7b28156aa58.19651e51440d732cfc6ed6249e628f92.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF"><div class="estrellas">★★★☆☆</div><div class="precio">$149</div><h4>Blusa elegante</h4></div>
+      <div class="producto"><div class="like">♥</div><img src="https://ae-pic-a1.aliexpress-media.com/kf/S0dc4712b23304cc1ae41fd93b95e54c0U.jpg"><div class="estrellas">★★★★★</div><div class="precio">$149</div><h4>Sudadera rosa</h4></div>
+      <div class="producto"><div class="like">♥</div><img src="https://www.flashy.com.co/cdn/shop/files/blusa-manga-corta-de-animal-print-con-mangas-embobadas-y-anudados-en-frente-mujer-flashy-amelia6_grande.jpg?v=1741813774"><div class="estrellas">★★★☆☆</div><div class="precio">$149</div><h4>Top deportivo</h4></div>
+      <div class="producto"><div class="like">♥</div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjBQV0NTrVacljoT9IxgZwOaZtacTt-TjCDw&s"><div class="estrellas">★★★★☆</div><div class="precio">$149</div><h4>Chaqueta casual</h4></div>
+      
+      <!-- 4 nuevos productos -->
+      <div class="producto"><div class="like">♥</div><img src="https://i5.walmartimages.com.mx/mg/gm/3pp/asr/d7782503-da8c-453f-a239-04b7d1f50655.f3d728d21d55c849e45d8db9beafa8fb.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF"><div class="estrellas">★★★★☆</div><div class="precio">$149</div><h4>Blazer negro</h4></div>
+      <div class="producto"><div class="like">♥</div><img src="https://i.pinimg.com/236x/9b/25/0d/9b250d54e0f58a45e1f7671811674ce7.jpg"><div class="estrellas">★★★★★</div><div class="precio">$149</div><h4>Vestido floreado</h4></div>
+      <div class="producto"><div class="like">♥</div><img src="https://i5.walmartimages.com/asr/0b41e24d-24e8-4cbe-83da-ecce450eac62.7bfec2164b6d0408c73aab48df95b601.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF"><div class="estrellas">★★★☆☆</div><div class="precio">$149</div><h4>Camisa de lino</h4></div>
+      <div class="producto"><div class="like">♥</div><img src="https://s.alicdn.com/@sc04/kf/Hb99e26ae56524709a3f79e9ae2cc4196L.jpg_300x300.jpg"><div class="estrellas">★★★★☆</div><div class="precio">$149</div><h4>Top con encaje</h4></div>
+    </div>
+  </div>
+
+</body>
+</html>
