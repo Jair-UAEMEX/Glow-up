@@ -26,5 +26,4 @@ Diego Jimenez Gonzalez - Encargado de el apartado de ayuda para los usuarios.
 
 
 
-![Image](https://github.com/user-attachments/assets/57131614-d999-474d-8040-4f05c323abae)
 
