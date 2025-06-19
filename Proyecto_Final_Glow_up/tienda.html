@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tienda en Línea - Glow up</title>
+  <link rel="stylesheet" href="estilo_tienda.css">
+</head>
+<body>
+
+  <header>
+    <div><strong>Logo</strong></div>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="tienda.html">Tienda</a>
+      <a href="index_contactos.html">Contacto</a>
+    </nav>
+  </header>
+
+  <h1>Glow up</h1>
+
+  <div class="buscador">
+    <input type="text" placeholder="Buscador">
+  </div>
+
+  <div class="contenedor">
+    <div class="filtros">
+      <section>
+        <div class="favoritos">
+          <h2>Favoritos</h2>
+          <p>Productos favoritos seleccionados: <span id="contadorFavoritos">0</span></p>
+          <button id="reiniciarFavoritos">Reiniciar favoritos</button>
+        </div>
+      </section>
+    </div>
+
+    <div class="productos">
+      <!-- Producto 1 -->
+<div class="producto" data-nombre="Chamarra deportiva" data-imagen="https://jrwestern.com.mx/wp-content/uploads/2023/10/Chamarra-Ariat-10028257-Softshell-Jkt-1.png">
+  <div class="like">♥</div>
+  <img src="https://jrwestern.com.mx/wp-content/uploads/2023/10/Chamarra-Ariat-10028257-Softshell-Jkt-1.png">
+  <div class="estrellas">★★★★★</div>
+  <h4>Chamarra deportiva</h4>
+  <button class="btn-comprar">Comprar</button>
+</div>
+
+<!-- Producto 2 -->
+<div class="producto" data-nombre="Chamarra de piel" data-imagen="https://kovparts.com/cdn/shop/products/chamarra1_2b511037-ff30-4cc2-ab62-a431a974e214.png?v=1708966673">
+  <div class="like">♥</div>
+  <img src="https://kovparts.com/cdn/shop/products/chamarra1_2b511037-ff30-4cc2-ab62-a431a974e214.png?v=1708966673">
+  <div class="estrellas">★★★★★</div>
+  <h4>Chamarra de piel</h4>
+  <button class="btn-comprar">Comprar</button>
+</div>
+
+<!-- Producto 3 -->
+<div class="producto" data-nombre="Chamarra de cuero" data-imagen="https://http2.mlstatic.com/D_NQ_NP_658558-MLM71778720226_092023-O-chamarra-piel-borrego-perforada-hombre-color-negro-c-96.webp">
+  <div class="like">♥</div>
+  <img src="https://http2.mlstatic.com/D_NQ_NP_658558-MLM71778720226_092023-O-chamarra-piel-borrego-perforada-hombre-color-negro-c-96.webp">
+  <div class="estrellas">★★★★☆</div>
+  <h4>Chamarra de cuero</h4>
+  <button class="btn-comprar">Comprar</button>
+</div>
+
+<!-- Producto 4 -->
+<div class="producto" data-nombre="Pantalón de mezclilla" data-imagen="https://yazbek.com.mx/cdn/shop/files/D0651-pantalon-mezclilla-dama-100algodon-indigo-oscuro_1.jpg?v=1734474218">
+  <div class="like">♥</div>
+  <img src="https://yazbek.com.mx/cdn/shop/files/D0651-pantalon-mezclilla-dama-100algodon-indigo-oscuro_1.jpg?v=1734474218">
+  <div class="estrellas">★★★☆☆</div>
+  <h4>Pantalón de mezclilla</h4>
+  <button class="btn-comprar">Comprar</button>
+</div>
+
+<!-- Producto 5 -->
+<div class="producto" data-nombre="Pantalón de mezclilla" data-imagen="https://passionpromocional.com/cdn/shop/products/Diapositiva2_a1c16a36-66f7-427d-9e34-5197115b0bc4_800x.jpg?v=1628979193">
+  <div class="like">♥</div>
+  <img src="https://passionpromocional.com/cdn/shop/products/Diapositiva2_a1c16a36-66f7-427d-9e34-5197115b0bc4_800x.jpg?v=1628979193">
+  <div class="estrellas">★★★★☆</div>
+  <h4>Pantalón de mezclilla</h4>
+  <button class="btn-comprar">Comprar</button>
+</div>
+
+<!-- Producto 6 -->
+<div class="producto" data-nombre="Pantalón de vestir" data-imagen="https://www.flashy.com.co/cdn/shop/files/pantalon-wide-leg-tipo-sastre-fulvia-2_grande.jpg?v=1722522082">
+  <div class="like">♥</div>
+  <img src="https://www.flashy.com.co/cdn/shop/files/pantalon-wide-leg-tipo-sastre-fulvia-2_grande.jpg?v=1722522082">
+  <div class="estrellas">★★★★★</div>
+  <h4>Pantalón de vestir</h4>
+  <button class="btn-comprar">Comprar</button>
+</div>
+
+<!-- Producto 7 -->
+<div class="producto" data-nombre="Blusa cruzada" data-imagen="https://surtidoradepartamental.vteximg.com.br/arquivos/ids/628179/010000153518_1.jpg?v=638598240438600000">
+  <div class="like">♥</div>
+  <img src="https://surtidoradepartamental.vteximg.com.br/arquivos/ids/628179/010000153518_1.jpg?v=638598240438600000">
+  <div class="estrellas">★★★★☆</div>
+  <h4>Blusa cruzada</h4>
+  <button class="btn-comprar">Comprar</button>
+</div>
+
+<!-- Producto 8 -->
+<div class="producto" data-nombre="Blusa lisa" data-imagen="https://i5.walmartimages.com/asr/90152b11-2c1e-4497-9a7d-c7b28156aa58.19651e51440d732cfc6ed6249e628f92.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF">
+  <div class="like">♥</div>
+  <img src="https://i5.walmartimages.com/asr/90152b11-2c1e-4497-9a7d-c7b28156aa58.19651e51440d732cfc6ed6249e628f92.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF">
+  <div class="estrellas">★★★☆☆</div>
+  <h4>Blusa lisa</h4>
+  <button class="btn-comprar">Comprar</button>
+</div>
+
+<!-- Producto 9 -->
+<div class="producto" data-nombre="Blusa primaveral" data-imagen="https://ae-pic-a1.aliexpress-media.com/kf/S0dc4712b23304cc1ae41fd93b95e54c0U.jpg">
+  <div class="like">♥</div>
+  <img src="https://ae-pic-a1.aliexpress-media.com/kf/S0dc4712b23304cc1ae41fd93b95e54c0U.jpg">
+  <div class="estrellas">★★★★★</div>
+  <h4>Blusa primaveral</h4>
+  <button class="btn-comprar">Comprar</button>
+</div>
+
+<!-- Producto 10 -->
+<div class="producto" data-nombre="Blusa estampada" data-imagen="https://www.flashy.com.co/cdn/shop/files/blusa-manga-corta-de-animal-print-con-mangas-embobadas-y-anudados-en-frente-mujer-flashy-amelia6_grande.jpg?v=1741813774">
+  <div class="like">♥</div>
+  <img src="https://www.flashy.com.co/cdn/shop/files/blusa-manga-corta-de-animal-print-con-mangas-embobadas-y-anudados-en-frente-mujer-flashy-amelia6_grande.jpg?v=1741813774">
+  <div class="estrellas">★★★☆☆</div>
+  <h4>Blusa estampada</h4>
+  <button class="btn-comprar">Comprar</button>
+</div>
+
+<!-- Producto 11 -->
+<div class="producto" data-nombre="Vestido elegante" data-imagen="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjBQV0NTrVacljoT9IxgZwOaZtacTt-TjCDw&s">
+  <div class="like">♥</div>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjBQV0NTrVacljoT9IxgZwOaZtacTt-TjCDw&s">
+  <div class="estrellas">★★★★☆</div>
+  <h4>Vestido elegante</h4>
+  <button class="btn-comprar">Comprar</button>
+</div>
+
+<!-- Producto 12 -->
+<div class="producto" data-nombre="Vestido casual" data-imagen="https://i5.walmartimages.com.mx/mg/gm/3pp/asr/d7782503-da8c-453f-a239-04b7d1f50655.f3d728d21d55c849e45d8db9beafa8fb.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF">
+  <div class="like">♥</div>
+  <img src="https://i5.walmartimages.com.mx/mg/gm/3pp/asr/d7782503-da8c-453f-a239-04b7d1f50655.f3d728d21d55c849e45d8db9beafa8fb.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF">
+  <div class="estrellas">★★★★☆</div>
+  <h4>Vestido casual</h4>
+  <button class="btn-comprar">Comprar</button>
+</div>
+
+<!-- Producto 13 -->
+<div class="producto" data-nombre="Vestido a cuadros" data-imagen="https://i.pinimg.com/236x/9b/25/0d/9b250d54e0f58a45e1f7671811674ce7.jpg">
+  <div class="like">♥</div>
+  <img src="https://i.pinimg.com/236x/9b/25/0d/9b250d54e0f58a45e1f7671811674ce7.jpg">
+  <div class="estrellas">★★★★★</div>
+  <h4>Vestido a cuadros</h4>
+  <button class="btn-comprar">Comprar</button>
+</div>
+
+<!-- Producto 14 -->
+<div class="producto" data-nombre="Vestido formal" data-imagen="https://i5.walmartimages.com/asr/0b41e24d-24e8-4cbe-83da-ecce450eac62.7bfec2164b6d0408c73aab48df95b601.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF">
+  <div class="like">♥</div>
+  <img src="https://i5.walmartimages.com/asr/0b41e24d-24e8-4cbe-83da-ecce450eac62.7bfec2164b6d0408c73aab48df95b601.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF">
+  <div class="estrellas">★★★☆☆</div>
+  <h4>Vestido formal</h4>
+  <button class="btn-comprar">Comprar</button>
+</div>
+
+<!-- Producto 15 -->
+<div class="producto" data-nombre="Vestido infantil" data-imagen="https://s.alicdn.com/@sc04/kf/Hb99e26ae56524709a3f79e9ae2cc4196L.jpg_300x300.jpg">
+  <div class="like">♥</div>
+  <img src="https://s.alicdn.com/@sc04/kf/Hb99e26ae56524709a3f79e9ae2cc4196L.jpg_300x300.jpg">
+  <div class="estrellas">★★★★☆</div>
+  <h4>Vestido infantil</h4>
+  <button class="btn-comprar">Comprar</button>
+</div>
+
+  </div>
+
+      <!-- (agrega los demás productos iguales a este con su nombre e imagen correspondiente y botón Comprar) -->
+    </div>
+  </div>
+
+  <script src="pago.js"></script>
+</body>
+</html>
+
+

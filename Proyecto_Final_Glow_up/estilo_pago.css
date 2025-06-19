@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f0e6;
+    
+  }
+  
+  .container {
+    display: flex;
+    max-width: 1200px;
+    margin: 50px auto;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .left, .right {
+    padding: 30px;
+    flex: 1;
+  }
+  
+  .left {
+    border-right: 1px solid #ccc;
+    text-align: center;
+  }
+  
+  .left h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .left .price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 20px;
+  }
+  
+  .left img {
+    width: 80%;
+    max-width: 300px;
+  }
+  
+  .right {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .apple-pay {
+    background-color: #f1d8c2;
+    color: rgb(0, 0, 0);
+    padding: 12px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .apple-pay::before {
+    content: "";
+    margin-right: 5px;
+  }
+  
+  .form-group {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group input,
+  .form-group select {
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .inline-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .pay-button {
+    margin-top: 30px;
+    padding: 12px;
+    background-color: #3b78c2;
+    color: white;
+    border: none;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .pay-button:hover {
+    background-color: #28d611ce;
+  }
+  
+  label {
+    font-size: 14px;
+  }
