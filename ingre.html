@@ -1,0 +1,58 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iniciar sesión - Glow up</title>
+  <link rel="stylesheet" href="ingresa.css">
+</head>
+<body>
+  <header class="header">
+    <div><strong>Glow up</strong></div>
+  </header>
+
+  <main class="main-container">
+    <div class="left">
+      <h1>Ingresa tu e-mail o teléfono<br>para iniciar sesión</h1>
+      <div class="input-image">
+        <img src="https://vasalsuperoalacomer.com/comer/images/notas/2021/mayo/me-lo-dijo-la-comer-blog-Ropa-para-la-epoca-de-calor-outfit.jpg" alt="Imagen decorativa">
+      </div>
+    </div>
+
+    <div class="right">
+      <form class="login-form">
+        <label for="email">E-mail o teléfono</label>
+        <input type="text" id="email" name="email" placeholder=" " required>
+        <button type="submit">Continuar</button>
+        <a href="#" class="link">Crear cuenta</a>
+        <div class="divider"><span>o</span></div>
+        <button type="button" class="google-btn">Iniciar sesión con Google</button>
+      </form>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="security">
+      
+    </div>
+
+    <!-- Enlace con ID para usar con JavaScript -->
+    <a href="#" id="ayudaLink" class="help-link">Necesito ayuda</a>
+
+    <div class="footer-links">
+      <a href="#">Cómo cuidamos tu privacidad</a> · 
+      <span>Copyright © 1999-2025 DeRemate.com de México S. de R.L. de C.V.</span> · 
+      <a href="#">Privacidad</a> · 
+      <a href="#">Condiciones</a>
+    </div>
+  </footer>
+
+  <!-- JavaScript para redirigir -->
+  <script>
+    document.getElementById("ayudaLink").addEventListener("click", function(event) {
+      event.preventDefault(); // Evita que el enlace se recargue
+      window.location.href = "proy.html"; // Redirige a la página ayuda.html
+    });
+  </script>
+</body>
+</html>

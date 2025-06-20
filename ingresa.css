@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #F5F0E6;
+  }
+  
+  .header {
+    background-color: #f1d8c2;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    height: 34px;
+  }
+  
+  .main-container {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding: 40px;
+    gap: 50px;
+    flex-wrap: wrap;
+  }
+  
+  .left h1 {
+    font-size: 24px;
+    font-weight: 500;
+  }
+  
+  .right {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 30px 40px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 350px;
+  }
+  
+  .login-form label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+  
+  .login-form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+    font-size: 16px;
+  }
+  
+  .login-form button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    color: white;
+    background-color: #3483fa;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom: 12px;
+  }
+  
+  .link {
+    display: block;
+    text-align: center;
+    margin-bottom: 12px;
+    color: #3483fa;
+    font-size: 14px;
+    text-decoration: none;
+  }
+  
+  .divider {
+    text-align: center;
+    margin: 15px 0;
+    position: relative;
+  }
+  
+  .divider::before,
+  .divider::after {
+    content: "";
+    height: 1px;
+    background-color: #ccc;
+    position: absolute;
+    top: 50%;
+    width: 45%;
+  }
+  
+  .divider::before {
+    left: 0;
+  }
+  .divider::after {
+    right: 0;
+  }
+  .divider span {
+    background-color: #fff;
+    padding: 0 10px;
+    color: #888;
+    font-size: 14px;
+  }
+  
+  .google-btn {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    padding: 10px;
+  }
+  
+  .footer {
+    padding: 30px 20px;
+    font-size: 13px;
+    color: #666;
+    text-align: center;
+  }
+  
+  .footer .security button {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .help-link {
+    display: block;
+    margin: 10px 0;
+    color: #3483fa;
+    text-decoration: none;
+  }
+  
+  .footer-links {
+    margin-top: 10px;
+    color: #999;
+  }
+  
+  .footer-links a {
+    color: #3483fa;
+    text-decoration: none;
+    margin: 0 5px;
+  }

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Centro de ayuda - Glow up</title>
+  <link rel="stylesheet" href="pro.css">
+</head>
+<body>
+  <header>
+    <div><strong>Glow up</strong></div>
+    <div>
+      <!-- Botones agregados -->
+      <button id="crearCuentaBtn">Crea tu cuenta</button>
+      <button id="ingresaBtn">Ingresa</button>
+      <a href="#">Ayuda</a>
+    </div>
+  </header>
+  
+  <div class="container">
+    <h1>¿Con qué podemos ayudarte?</h1>
+    <div class="search-bar">
+      <input type="text" placeholder="Buscar en Ayuda">
+    </div>
+
+    <!-- Secciones existentes -->
+    <div class="section">
+      <h2>Compras</h2>
+      <div class="option">
+        <a href="#">Administrar y cancelar compras</a>
+        <div class="description">Pagar, seguir envíos, modificar, reclamar o cancelar compras.</div>
+      </div>
+      <div class="option">
+        <a href="#">Devoluciones y reembolsos</a>
+        <div class="description">Devolver un producto o consultar por reintegros de dinero de una compra.</div>
+      </div>
+      <div class="option">
+        <a href="#">Preguntas frecuentes sobre compras</a>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Ventas</h2>
+      <div class="option">
+        <a href="#">Reputación, ventas y envíos</a>
+        <div class="description">Reclamar por tu reputación, consultar por un envío, pago o devolución.</div>
+      </div>
+      <div class="option">
+        <a href="#">Administrar publicaciones</a>
+        <div class="description">Mejorar la calidad, modificar, eliminar o resolver problemas.</div>
+      </div>
+      <div class="option">
+        <a href="#">Preguntas frecuentes sobre ventas</a>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Ayuda sobre tu cuenta</h2>
+      <div class="option">
+        <a href="#">Perfil</a>
+      </div>
+      <div class="option">
+        <a href="#">Seguridad y acceso a la cuenta</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script>
+    document.getElementById("crearCuentaBtn").addEventListener("click", function() {
+      window.location.href = "crear-cuenta.html";
+    });
+
+    document.getElementById("ingresaBtn").addEventListener("click", function() {
+      window.location.href = "ingre.html";
+    });
+  </script>
+</body>
+</html>
